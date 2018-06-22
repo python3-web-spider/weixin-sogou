@@ -1,7 +1,7 @@
 # weixin_sogou
 ## 使用微信二维码登陆搜狗，搜索关键词显示100页
 
-登陆后修改wechat/settings.py, 替换COOKIES为你的。
+登陆后修改wechat/settings.py, 替换COOKIES为你的， 格式如下。
 
 ```
 COOKIES = {
