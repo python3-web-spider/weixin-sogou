@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from wechat.settings import COOKIES
+from wechat.middlewares import _set_new_ip
 
 
 class WxgzhSpider(scrapy.Spider):
     name = 'wxgzh'
     key_word = 'NBA'
-    url = 'http://weixin.sogou.com/weixin?type=2&query={}&page=99'.format(key_word)
+    url = 'http://weixin.sogou.com/weixin?type=2&query={}&page=78'.format(key_word)
 
     def start_requests(self):
         yield scrapy.Request(
@@ -20,12 +21,11 @@ class WxgzhSpider(scrapy.Spider):
             yield response.follow(href, self.parse_detail)
 
         # follow pagination links
-        #"""
-        next_page = response.css('#sogou_next::attr(href)').extract_first()
-        if next_page is not None:
-            next_page = response.urljoin(next_page)
-            yield scrapy.Request(next_page, callback=self.parse, cookies=COOKIES)
-        #"""
+        for href in response.css('#sogou_next::attr(href)'):
+            yield response.follow(href, callback=self.parse, cookies=COOKIES, meta={'proxy': 'http://localhost:8123'})
+            page = int(response.css('#pagebar_container span::text').extract_first())
+            if page % 20 == 19:
+                _set_new_ip()
 
     def parse_detail(self, response):
         item = {
