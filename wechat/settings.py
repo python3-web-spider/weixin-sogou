@@ -36,23 +36,6 @@ ROBOTSTXT_OBEY = False
 #COOKIES_ENABLED = False
 COOKIES = {
     'ppmdig': '15293786560000008bf4c454025deafb61810487adf6d536',
-    'ppinf': '5|1529378641|1530588241|dHJ1c3Q6MToxfGNsaWVudGlkOjQ6MjAxN3x1bmlxbmFtZTozNjolRTQlQjglODMlRTUlQkQlQTklRTklOTclQjklRTklOTIlOUZ8Y3J0OjEwOjE1MjkzNzg2NDF8cmVmbmljazozNjolRTQlQjglODMlRTUlQkQlQTklRTklOTclQjklRTklOTIlOUZ8dXNlcmlkOjQ0Om85dDJsdUZ1U0NNU2xzOTM5Tm4xU29rdC1vazhAd2VpeGluLnNvaHUuY29tfA',
-    'pprdig': 'aolIi-YXPNviE1Bo_vrp9x_3DWRMZ37hLC8YuoJEStNUBJFSFOkP-_eBwQK-BNXN2DB20BUvfzOv4GPd91MwfEvz-dlu5xZlWg1ndph6NFIeYuZ7Rwe_UhQpdL491M1GDMPZorL5wCuKqbXGtD1dNsbIi25-sbiQV1AnOFojm2Q',
-    'sgid': '02-32882829-AVsod1GJjtkJyaMR3lfpiaYI',
-    'IPLOC': 'CN4420',
-    'ABTEST': '0|1529314574|v1',
-    'sct': '17',
-    'SNUID': '06762B1B6B6F07AD6CD0F82B6B710BA5',
-    'LCLKINT': '975',
-    'LSTMV': '377%2C30',
-    'weixinIndexVisited':'1',
-    'SUID':'10C8F0B72320940A0000000059155782',
-    'SUV': '008D42E3B7F0C8105915577931847600'
-}
-"""
-DEFAULT_REQUEST_HEADERS = {
-    "Host": "weixin.sogou.com",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 """
 # Enable or disable spider middlewares
