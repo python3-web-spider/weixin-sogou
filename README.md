@@ -17,4 +17,4 @@ key_word = 'NBA'
 ```
 
 ## 使用代理
-### 反爬使用tor代理或ADSL动态拨号代理。如果使用tor，就注释掉settings.py里的DOWNLOADER_MIDDLEWARES，并安装tor与polipo或privoxy，这里选择polipo，修改相关的配置。
+反爬使用tor代理或ADSL动态拨号代理。如果使用tor，就注释掉settings.py里的DOWNLOADER_MIDDLEWARES，并安装tor与polipo或privoxy，这里选择polipo，修改相关的配置。
